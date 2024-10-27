@@ -1,0 +1,671 @@
+:root {
+    --primary: #007d68;
+    --Second : #3a3a3a;
+    --third : #f2f2f2;
+}
+main{
+    padding: 100px 0 50px 0;
+    position: relative;
+    .menu-primary{
+        position: relative;
+        padding: 150px 0 20px;
+        .card{
+            position: relative;
+            background: transparent;
+            border: none;
+
+            .item-img{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -160px;
+                width: 100%;
+                z-index: 1100;
+                
+             
+
+            }
+            .item-content{
+                position: relative;
+                background: rgb(206, 196, 196);
+                backdrop-filter: blur(20px);
+                border-radius: 30px;
+                border: none;
+                padding: 150px 20px 20px;
+            }
+            h4{
+                font-family: "Great Vibes", serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                font-family: "Roboto", serif;
+
+            }
+            .like{
+                position: absolute;
+                right: 20px;
+                top: 30%;
+                width: 30px;
+                height: 30px;
+                background: var(--primary);
+                border-radius: 50%;
+                cursor: pointer;
+                i{
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+            .price{
+                font-size: 26px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            .item-btn{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                background:black;
+                box-shadow: 0 0 20px 0 black;
+                padding: 15px;
+                width: 50px;
+                height: 50px;
+                border-radius: 38% 62% 65% 35% / 37% 38% 62% 63% ;
+                transition: .3s;
+                cursor: pointer;
+                &:hover{
+                    border-radius: 50%;
+                }
+                i{
+                    font-size:22px ;
+                    color: white;
+                }
+            }
+        }
+        .description{
+            position: relative;
+            transform: translateY(-15%);
+            h2{
+                font-family: "Great Vibes", serif;
+                font-size: 48px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            h5{
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p{
+                font-weight: 420;
+                letter-spacing: 1px;
+                text-align: end;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            background: url(../image/food-13.png) no-repeat ;
+            background-size: cover;
+            left: -125px;
+            top: -240px;
+            height: 400px;
+            width: 222px;
+            z-index: -1;
+            transform: rotate(45deg);
+        }
+     
+    }
+    .menu-second{
+        padding: 80px 20px;
+        .description{
+            h2{
+                font-family: "Great Vibes", serif;
+                font-size: 48px;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            h5{
+                font-weight: 500;
+                letter-spacing: 1px;
+                
+                margin-bottom: 20px;
+            }
+            p{
+                font-weight: 420;
+                letter-spacing: 1px;
+                
+            }
+        }
+      img{
+        width: 100%;
+        
+      }
+
+
+    }
+
+    .third-menu{
+        padding: 30px 10px;
+        position: relative;
+        .booking{
+            h3{
+                font-size: 48px;
+                font-family: "Great Vibes", serif;
+               
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+            form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                
+                input{
+                    padding: 7px 30px;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    border: 2px solid black;
+                    font-size: 18px;
+                    color: black;
+                }
+                textarea{
+                    background-color: transparent;
+                    margin-top: 20px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    outline: none;
+                    border: none;
+                    border: 2px solid rgb(0, 59, 51);
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    font-weight: 500;
+                   
+                }
+                .booking-date{
+                    margin-top: 15px;
+                    h5{
+                        font-family: "Great Vibes", serif;
+                        font-weight: 550;
+                        font-size: 22px;
+                    }
+                    input{
+                        width: 100%;
+                    }
+                }
+                button{
+                    width: 150px;
+                    margin: 0 auto;
+                    padding: 10px;
+                    border: none;
+                    outline: none;
+                    border-radius: 15px 0 15px 0;
+                    background: black;
+                    color: white;
+                    font-weight: 500;
+                    transition: .3s ease-in;
+                    &:hover{
+                        border-radius: 0 15px 0 15px;
+                    }
+                }
+           
+            }
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            background: url(../image/food-7.png) no-repeat ;
+            background-size: cover;
+            background-position: center ;
+            left: -50px;
+            top: -160px;
+            height: 200px;
+            width: 200px;
+            z-index: -1;
+        }
+      
+
+       .app-download{
+        padding: 20px;
+        h3{
+            font-family: "Great Vibes", serif;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h4{
+            font-size: 22px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: "Roboto", serif;
+        }
+        p{
+            font-weight: 300;
+
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: "Roboto", serif;
+        }
+        .download{
+            img{
+                width: 100%;
+            }
+        }
+       }
+       .cupon{
+        padding: 30px ;
+        h3{
+            font-family: "Great Vibes", serif;
+            font-size: 37px;
+            font-weight: 600;
+            word-spacing: 8px;
+            letter-spacing: 1px;
+            width: 100%;
+        }
+        a{
+           margin: 0 auto;
+           padding: 10px 20px;
+           border: none;
+           outline: none;
+           border-radius: 15px 0 15px 0;
+           background: black;
+           color: white;
+           font-weight: 500;
+           transition: .3s ease-in;
+            &:hover{
+            border-radius: 0 15px 0 15px;
+           }
+        }
+        hr{
+            height: 2px;
+            background-color: rgb(0, 139, 2);
+            opacity: 100%;
+          
+        }
+        P{
+            font-weight: 400;
+        }
+       }
+     
+    }
+    &::after{
+        position: absolute;
+            content: '';
+            background: url(../image/food-8.png) no-repeat ;
+            background-size: cover;
+            right: -50px;
+            top: -150px;
+            height: 300px;
+            width: 200px;
+            z-index: -1;
+            transform: rotate(45deg);
+    }
+    img{
+        overflow: hidden;
+    }
+}
+
+// Responcsive //
+
+
+@media (min-width:0px) and (max-width:575.99px){
+
+    main{
+        &::after{
+            right: -50px;
+            top: -98px;
+            height: 300px;
+            width: 200px;
+            z-index: -1;
+            transform: rotate(0deg);
+            scale: .6;
+        }
+
+      .menu-primary{
+        padding: 110px 0 20px;
+        .card{
+            width: 100%;
+            
+            .item-img{
+                width: 65% !important;
+                top: -90px; 
+            }
+            .item-content{
+                padding: 70px 14px 0;
+                margin-bottom: 100px  ;
+            }
+        }
+        
+        &::before{
+            left: -90px;
+            top: -200px;
+            scale: .6;
+
+           
+              }
+              .description{
+                h2{
+                    font-size: 30px;
+                }
+                h5{
+                    display: none;
+                }
+                p{
+                    font-size: 14px;
+                    word-spacing: 1px;
+                    text-align: center;
+                }
+            }
+      }
+      .third-menu{
+        padding:    0px 10px;
+
+        &::before{
+            top: -590px;
+            height: 180px;
+            width: 180px;
+            left: -10px;
+        }
+        .cupon{
+            padding: 0 5px;
+            a{
+                padding: 7px;
+            }
+            h3{
+                font-size: 21px;
+                font-weight: 600;
+                word-spacing: 5px;
+                margin-bottom: 15px;
+
+  
+            }
+        }
+        .booking{
+            form{
+                .from_upline{
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                input{
+                    padding: 6px;
+                    font-size: 16px;
+                }
+            }
+            h3{
+                font-size: 30px;
+            }
+        }
+        
+    }
+    .menu-second{
+        padding: 90px 20px 0 20px;
+        .description{
+            h5{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 31px;
+            }
+            P{
+                font-size: 12px;
+            }
+        }
+        img{
+           
+            display: flex;
+            margin:  0 auto;
+            width: 90%;
+        }
+    
+ }  
+ 
+ }
+
+
+}
+@media (min-width:576px) and (max-width:767.99px){
+
+    main{
+
+      .menu-primary{
+        .card{
+            width: 50%;
+            
+            .item-img{
+                width: 42% !important;
+                top: -70px; 
+            }
+            .item-content{
+                padding: 5px 22px 0;
+                margin-bottom: 100px  ;
+            }
+        }
+        
+        &::before{
+            left: -80px;
+            top: -156px;
+            height: 320px;
+            width: 180px;
+           
+              }
+              .description{
+                h2{
+                    font-size: 35px;
+                }
+            }
+      }
+      .third-menu{
+        padding:    0px 10px;
+
+        &::before{
+            left: -50px;
+            top: -520px;
+            height: 190px;
+            width: 170px;
+        }
+        .cupon{
+            padding: 0 30px;
+        }
+        .booking{
+            form{
+                .from_upline{
+                    flex-direction: column;
+                    gap: 10px;
+                }
+            }
+        }
+        
+    }
+    .menu-second{
+        padding: 90px 20px 0 20px;
+        .description{
+            h5{
+                font-size: 12px;
+            }
+            h2{
+                font-size: 31px;
+            }
+            P{
+                font-size: 12px;
+            }
+        }
+        img{
+           
+            display: flex;
+            margin:  0 auto;
+            width: 60%;
+        }
+    
+ }  
+ 
+ }
+
+
+}
+@media (min-width:768px) and (max-width:991.99px){
+
+    main{
+
+      .menu-primary{
+        .card{
+            width: 50%;
+            
+            .item-img{
+                width: 42% !important;
+                top: -70px; 
+            }
+            .item-content{
+                padding: 70px 30px 20px;
+                margin-bottom: 170px  ;
+            }
+        }
+        
+        &::before{
+            left: -80px;
+            top: -156px;
+            height: 320px;
+            width: 180px;
+           
+              }
+      }
+      .third-menu{
+        padding:    0px 10px;
+
+        &::before{
+            left: -50px;
+            top: -612px;
+            height: 190px;
+            width: 170px;
+        }
+        .cupon{
+            padding: 0 30px;
+        }
+    }
+    .menu-second{
+        padding: 90px 20px 0 20px;
+        .description{
+            h5{
+                font-size: 12px;
+            }
+        }
+        img{
+           
+            display: flex;
+            margin:  0 auto;
+            width: 60%;
+        }
+    
+ }  
+ 
+ }
+
+
+}
+@media (min-width:992px) and (max-width:1199.99px){
+
+    main{
+
+      .menu-primary{
+        .card{
+            width: 50%;
+            
+            .item-img{
+                width: 42% !important;
+                top: -90px; 
+            }
+            .item-content{
+                padding: 70px 30px 20px;
+                margin-bottom: 100px  ;
+            }
+        }
+        
+        &::before{
+            left: -80px;
+            top: -156px;
+            height: 320px;
+            width: 180px;
+           
+              }
+      }
+      .third-menu{
+        padding:    0px 10px;
+
+        &::before{
+            left: -50px;
+            top: -675px;
+            height: 190px;
+            width: 170px;
+        }
+        .cupon{
+            padding: 0 30px;
+        }
+    }
+    .menu-second{
+        padding: 90px 20px 0 20px;
+        .description{
+            h5{
+                font-size: 12px;
+            }
+        }
+        img{
+           
+            display: flex;
+            margin:  0 auto;
+            width: 60%;
+        }
+    
+ }  
+ 
+ }
+
+
+}
+@media (min-width:1200px) and (max-width:1399.99px){
+main{
+    .menu-primary{
+        &::before{
+            left: -61px;
+            top: -284px;
+            height: 362px;
+            width: 213px;
+            z-index: -1;
+            transform: rotate(54deg);
+        }
+        .description{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+    .third-menu{
+        padding: 85px 10px 10px 10px;
+        &::before{
+            top: -105px;
+           
+        }
+        .booking{
+            form{
+                input{
+                    padding: 7px 7px;
+                }
+            }
+        }
+    }
+}
+    
+} 
+ 
+

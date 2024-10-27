@@ -1,0 +1,903 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, rgba(253, 1, 34, 0.829), rgb(23, 23, 221), rgb(13, 252, 225), yellow);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.backto-top {
+  position: fixed;
+  bottom: 20PX;
+  right: 20PX;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  transition: ease-in 0.5s;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+}
+.backto-top i {
+  font-size: 22px;
+  color: white;
+  margin-top: 10px;
+}
+.backto-top:hover {
+  border: 1px solid white;
+  overflow: hidden;
+  outline: none;
+}
+
+:root {
+  --primary: #007d68;
+  --Second: #3a3a3a;
+  --third: #f2f2f2;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../image/forest-2.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page {
+  position: relative;
+  background: rgba(225, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 50px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.page header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  background: transparent;
+  transition: 0.5s;
+  z-index: 110;
+}
+.page header .logo {
+  position: relative;
+  font-family: "Great Vibes", cursive;
+  font-size: 36px;
+  color: black;
+  letter-spacing: 3px;
+  font-weight: 800;
+}
+.page header .cart {
+  position: relative;
+  background: black;
+  box-shadow: 0 0 25px black;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30% 70% 65% 35%/30% 38% 62% 70%;
+  transition: 0.3s !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page header .cart:hover {
+  border-radius: 50% !important;
+}
+.page header .cart i {
+  font-size: 22px;
+  color: white !important;
+}
+.page header .cart .number {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 0px) and (max-width: 575.99px) {
+  .page {
+    width: 88%;
+    margin-top: 18px;
+    padding: 0 5px;
+    margin-bottom: 20px;
+  }
+  .page header {
+    padding: 6px;
+  }
+  .page header .cart {
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 0 0;
+  }
+}
+:root {
+  --primary: #007d68;
+  --Second: #3a3a3a;
+  --third: #f2f2f2;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 20px 10px;
+  overflow: hidden;
+}
+.banner .nav {
+  position: absolute;
+  top: 42%;
+  margin: 40px 0;
+  z-index: 1100;
+}
+.banner .nav li {
+  list-style: none;
+  margin: 0 20px 20px 0;
+}
+.banner .nav li .nav-btn {
+  position: relative;
+  background-color: rgb(6, 26, 29);
+  text-decoration: none;
+  border: none;
+  padding: 15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 30% 70% 65% 35%/30% 38% 62% 70% !important;
+  box-shadow: 0 0 10px 0 rgb(14, 77, 35);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.banner .nav li .nav-btn:hover {
+  border-radius: 50% !important;
+  background: var(--primary);
+}
+.banner .nav li .nav-btn i {
+  font-size: 20px;
+  color: white;
+}
+.banner .food-image img {
+  width: 100%;
+}
+.banner .content h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 44px;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 3px;
+}
+.banner p {
+  margin-top: 80px;
+}
+.banner .page-btn {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  transition: 0.5s;
+  display: inline-flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.banner .page-btn:hover {
+  border-radius: 0 20px 0 20px;
+}
+
+@media (min-width: 0px) and (max-width: 575.99px) {
+  .banner {
+    padding: 75px 0 0px 10px;
+  }
+  .banner .nav {
+    top: 12%;
+  }
+  .banner .nav li .nav-btn {
+    padding: 10px;
+  }
+  .banner p {
+    margin-top: 65px;
+    font-size: 12px;
+  }
+  .banner .content {
+    margin-bottom: 40px;
+  }
+  .banner .content h1 {
+    font-size: 28px;
+  }
+  .banner .food-image {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .banner .nav {
+    top: 15%;
+  }
+  .banner p {
+    margin-top: 85px;
+  }
+  .banner .content {
+    margin-bottom: 40px;
+  }
+  .banner .content h1 {
+    font-size: 28px;
+  }
+  .banner .food-image {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .banner .nav {
+    top: 68%;
+  }
+  .banner p {
+    margin-top: 85px;
+  }
+  .banner .content {
+    margin-bottom: 40px;
+  }
+  .banner .food-image {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  .banner .nav {
+    top: 72%;
+  }
+  .banner p {
+    margin-top: 85px;
+  }
+  .banner .content {
+    margin-bottom: 40px;
+  }
+  .banner .food-image {
+    width: 65%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  .banner .nav {
+    top: 38%;
+  }
+}
+:root {
+  --primary: #007d68;
+  --Second: #3a3a3a;
+  --third: #f2f2f2;
+}
+
+main {
+  padding: 100px 0 50px 0;
+  position: relative;
+}
+main .menu-primary {
+  position: relative;
+  padding: 150px 0 20px;
+}
+main .menu-primary .card {
+  position: relative;
+  background: transparent;
+  border: none;
+}
+main .menu-primary .card .item-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -160px;
+  width: 100%;
+  z-index: 1100;
+}
+main .menu-primary .card .item-content {
+  position: relative;
+  background: rgb(206, 196, 196);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: none;
+  padding: 150px 20px 20px;
+}
+main .menu-primary .card h4 {
+  font-family: "Great Vibes", serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+main .menu-primary .card p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+}
+main .menu-primary .card .like {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  width: 30px;
+  height: 30px;
+  background: var(--primary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .menu-primary .card .like i {
+  font-size: 18px;
+  color: white;
+}
+main .menu-primary .card .price {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main .menu-primary .card .item-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: black;
+  box-shadow: 0 0 20px 0 black;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 38% 62% 65% 35%/37% 38% 62% 63%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main .menu-primary .card .item-btn:hover {
+  border-radius: 50%;
+}
+main .menu-primary .card .item-btn i {
+  font-size: 22px;
+  color: white;
+}
+main .menu-primary .description {
+  position: relative;
+  transform: translateY(-15%);
+}
+main .menu-primary .description h2 {
+  font-family: "Great Vibes", serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main .menu-primary .description h5 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .menu-primary .description p {
+  font-weight: 420;
+  letter-spacing: 1px;
+  text-align: end;
+}
+main .menu-primary::before {
+  position: absolute;
+  content: "";
+  background: url(../image/food-13.png) no-repeat;
+  background-size: cover;
+  left: -125px;
+  top: -240px;
+  height: 400px;
+  width: 222px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+main .menu-second {
+  padding: 80px 20px;
+}
+main .menu-second .description h2 {
+  font-family: "Great Vibes", serif;
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main .menu-second .description h5 {
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+main .menu-second .description p {
+  font-weight: 420;
+  letter-spacing: 1px;
+}
+main .menu-second img {
+  width: 100%;
+}
+main .third-menu {
+  padding: 30px 10px;
+  position: relative;
+}
+main .third-menu .booking h3 {
+  font-size: 48px;
+  font-family: "Great Vibes", serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+main .third-menu .booking form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .third-menu .booking form input {
+  padding: 7px 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid black;
+  font-size: 18px;
+  color: black;
+}
+main .third-menu .booking form textarea {
+  background-color: transparent;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  outline: none;
+  border: none;
+  border: 2px solid rgb(0, 59, 51);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+main .third-menu .booking form .booking-date {
+  margin-top: 15px;
+}
+main .third-menu .booking form .booking-date h5 {
+  font-family: "Great Vibes", serif;
+  font-weight: 550;
+  font-size: 22px;
+}
+main .third-menu .booking form .booking-date input {
+  width: 100%;
+}
+main .third-menu .booking form button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 15px 0 15px 0;
+  background: black;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease-in;
+}
+main .third-menu .booking form button:hover {
+  border-radius: 0 15px 0 15px;
+}
+main .third-menu::before {
+  position: absolute;
+  content: "";
+  background: url(../image/food-7.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  left: -50px;
+  top: -160px;
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+main .third-menu .app-download {
+  padding: 20px;
+}
+main .third-menu .app-download h3 {
+  font-family: "Great Vibes", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main .third-menu .app-download h4 {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto", serif;
+}
+main .third-menu .app-download p {
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto", serif;
+}
+main .third-menu .app-download .download img {
+  width: 100%;
+}
+main .third-menu .cupon {
+  padding: 30px;
+}
+main .third-menu .cupon h3 {
+  font-family: "Great Vibes", serif;
+  font-size: 37px;
+  font-weight: 600;
+  word-spacing: 8px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+main .third-menu .cupon a {
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 15px 0 15px 0;
+  background: black;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s ease-in;
+}
+main .third-menu .cupon a:hover {
+  border-radius: 0 15px 0 15px;
+}
+main .third-menu .cupon hr {
+  height: 2px;
+  background-color: rgb(0, 139, 2);
+  opacity: 100%;
+}
+main .third-menu .cupon P {
+  font-weight: 400;
+}
+main::after {
+  position: absolute;
+  content: "";
+  background: url(../image/food-8.png) no-repeat;
+  background-size: cover;
+  right: -50px;
+  top: -150px;
+  height: 300px;
+  width: 200px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+main img {
+  overflow: hidden;
+}
+
+@media (min-width: 0px) and (max-width: 575.99px) {
+  main::after {
+    right: -50px;
+    top: -98px;
+    height: 300px;
+    width: 200px;
+    z-index: -1;
+    transform: rotate(0deg);
+    scale: 0.6;
+  }
+  main .menu-primary {
+    padding: 110px 0 20px;
+  }
+  main .menu-primary .card {
+    width: 100%;
+  }
+  main .menu-primary .card .item-img {
+    width: 65% !important;
+    top: -90px;
+  }
+  main .menu-primary .card .item-content {
+    padding: 70px 14px 0;
+    margin-bottom: 100px;
+  }
+  main .menu-primary::before {
+    left: -90px;
+    top: -200px;
+    scale: 0.6;
+  }
+  main .menu-primary .description h2 {
+    font-size: 30px;
+  }
+  main .menu-primary .description h5 {
+    display: none;
+  }
+  main .menu-primary .description p {
+    font-size: 14px;
+    word-spacing: 1px;
+    text-align: center;
+  }
+  main .third-menu {
+    padding: 0px 10px;
+  }
+  main .third-menu::before {
+    top: -580px;
+    height: 180px;
+    width: 180px;
+    left: -10px;
+  }
+  main .third-menu .cupon {
+    padding: 0 5px;
+  }
+  main .third-menu .cupon a {
+    padding: 7px;
+  }
+  main .third-menu .cupon h3 {
+    font-size: 21px;
+    font-weight: 600;
+    word-spacing: 5px;
+    margin-bottom: 15px;
+  }
+  main .third-menu .booking form .from_upline {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .third-menu .booking form input {
+    padding: 6px;
+    font-size: 16px;
+  }
+  main .third-menu .booking h3 {
+    font-size: 30px;
+  }
+  main .menu-second {
+    padding: 90px 20px 0 20px;
+  }
+  main .menu-second .description h5 {
+    font-size: 12px;
+  }
+  main .menu-second .description h2 {
+    font-size: 31px;
+  }
+  main .menu-second .description P {
+    font-size: 12px;
+  }
+  main .menu-second img {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  main .menu-primary .card {
+    width: 50%;
+  }
+  main .menu-primary .card .item-img {
+    width: 42% !important;
+    top: -70px;
+  }
+  main .menu-primary .card .item-content {
+    padding: 5px 22px 0;
+    margin-bottom: 100px;
+  }
+  main .menu-primary::before {
+    left: -80px;
+    top: -156px;
+    height: 320px;
+    width: 180px;
+  }
+  main .menu-primary .description h2 {
+    font-size: 35px;
+  }
+  main .third-menu {
+    padding: 0px 10px;
+  }
+  main .third-menu::before {
+    left: -50px;
+    top: -520px;
+    height: 190px;
+    width: 170px;
+  }
+  main .third-menu .cupon {
+    padding: 0 30px;
+  }
+  main .third-menu .booking form .from_upline {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .menu-second {
+    padding: 90px 20px 0 20px;
+  }
+  main .menu-second .description h5 {
+    font-size: 12px;
+  }
+  main .menu-second .description h2 {
+    font-size: 31px;
+  }
+  main .menu-second .description P {
+    font-size: 12px;
+  }
+  main .menu-second img {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  main .menu-primary .card {
+    width: 50%;
+  }
+  main .menu-primary .card .item-img {
+    width: 42% !important;
+    top: -70px;
+  }
+  main .menu-primary .card .item-content {
+    padding: 70px 30px 20px;
+    margin-bottom: 170px;
+  }
+  main .menu-primary::before {
+    left: -80px;
+    top: -156px;
+    height: 320px;
+    width: 180px;
+  }
+  main .third-menu {
+    padding: 0px 10px;
+  }
+  main .third-menu::before {
+    left: -50px;
+    top: -612px;
+    height: 190px;
+    width: 170px;
+  }
+  main .third-menu .cupon {
+    padding: 0 30px;
+  }
+  main .menu-second {
+    padding: 90px 20px 0 20px;
+  }
+  main .menu-second .description h5 {
+    font-size: 12px;
+  }
+  main .menu-second img {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  main .menu-primary .card {
+    width: 50%;
+  }
+  main .menu-primary .card .item-img {
+    width: 42% !important;
+    top: -90px;
+  }
+  main .menu-primary .card .item-content {
+    padding: 70px 30px 20px;
+    margin-bottom: 100px;
+  }
+  main .menu-primary::before {
+    left: -80px;
+    top: -156px;
+    height: 320px;
+    width: 180px;
+  }
+  main .third-menu {
+    padding: 0px 10px;
+  }
+  main .third-menu::before {
+    left: -50px;
+    top: -675px;
+    height: 190px;
+    width: 170px;
+  }
+  main .third-menu .cupon {
+    padding: 0 30px;
+  }
+  main .menu-second {
+    padding: 90px 20px 0 20px;
+  }
+  main .menu-second .description h5 {
+    font-size: 12px;
+  }
+  main .menu-second img {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399.99px) {
+  main .menu-primary::before {
+    left: -61px;
+    top: -284px;
+    height: 362px;
+    width: 213px;
+    z-index: -1;
+    transform: rotate(54deg);
+  }
+  main .menu-primary .description h2 {
+    font-size: 40px;
+  }
+  main .third-menu {
+    padding: 85px 10px 10px 10px;
+  }
+  main .third-menu::before {
+    top: -105px;
+  }
+  main .third-menu .booking form input {
+    padding: 7px 7px;
+  }
+}
+#footer {
+  padding: 5px;
+}
+#footer .right h3 {
+  font-size: 38px;
+  font-family: "Great Vibes", serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+  background: linear-gradient(185deg, rgb(220, 210, 12), rgb(224, 1, 1), rgb(213, 146, 19));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#footer .right h6 {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", serif;
+}
+#footer .right h4 {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Roboto", serif;
+}
+#footer .right h4 span {
+  font-size: 20px;
+}
+
+.item-btn {
+  background: black;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 38% 62% 65% 35%/37% 38% 62% 63%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.item-btn:hover {
+  border-radius: 50%;
+}
+.item-btn i {
+  font-size: 22px;
+  color: white;
+}
+
+@media (min-width: 0px) and (max-width: 575.99px) {
+  #footer {
+    margin-top: -45px;
+  }
+  #footer .right h4 {
+    font-size: 18px;
+  }
+  #footer .right h4 span {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */

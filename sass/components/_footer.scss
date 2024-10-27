@@ -1,0 +1,62 @@
+#footer{
+    padding: 5px;
+    .right{
+        h3{
+            font-size: 38px;
+            font-family: "Great Vibes", serif;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(185deg, rgb(220, 210, 12),rgb(224, 1, 1),rgb(213, 146, 19));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h6{
+            font-size: 22px;
+            font-weight: 500;
+            font-family: "Roboto", serif;
+            
+            
+        }
+        h4{
+            font-size: 26px;
+            font-weight: 600;
+            font-family: "Roboto", serif;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.item-btn{
+    background:black;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 38% 62% 65% 35% / 37% 38% 62% 63% ;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        border-radius: 50%;
+    }
+    i{
+        font-size:22px ;
+        color: white;
+    }
+}
+
+// Responsive
+
+@media (min-width:0px) and (max-width:575.99px){
+#footer{
+    margin-top: -45px;
+    .right{
+        h4{
+            font-size: 18px;
+            span{
+                font-size: 14px;
+            }
+        }
+    }
+}
+}
